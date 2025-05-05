@@ -380,7 +380,7 @@ var _searchAnalyzerName = !empty(searchAnalyzerName) ? searchAnalyzerName : 'sta
 param useSemanticReranking bool = false
 var _useSemanticReranking = useSemanticReranking != null ? useSemanticReranking : false
 
-var _searchServiceSkuName = _networkIsolation?'standard2':'standard'
+var _searchServiceSkuName = _networkIsolation?'basic':'basic'
 
 @description('Search index name.')
 param searchIndex string = ''
@@ -780,10 +780,10 @@ module appServicePlan './core/host/appserviceplan.bicep' =  {
     existingAppServicePlanResourceGroupName : _azureReuseConfig.existingAppServicePlanResourceGroupName
     tags: tags
     sku: {
-      name: 'P0v3'
+      name: 'B1'
       capacity: 1
     }
-    kind: 'linux'
+    kind: 'Windows'
   }
 }
 
