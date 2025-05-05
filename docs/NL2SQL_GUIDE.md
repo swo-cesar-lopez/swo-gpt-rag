@@ -49,7 +49,7 @@ Learn how the **orchestrator** works and configure it for NL2SQL and Fabric in t
 
 2. **Data Ingestion** – Ingests data source metadata, like data dictionaries, to enhance query generation accuracy.
 
-To configure the **data ingestion** process for these scenarios, refer to the [Data Ingestion Repository](https://github.com/Azure/gpt-rag-ingestion/blob/main/docs/NL2SQL.md).
+To configure the **data ingestion** process for these scenarios, refer to the [Data Ingestion Repository](https://github.com/swo-cesar-lopez/swo-gpt-rag-ingestion/blob/main/docs/NL2SQL.md).
 
 > [!NOTE]
 > Currently, only the Agentic Orchestrator supports NL2SQL feature.

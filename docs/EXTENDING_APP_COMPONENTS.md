@@ -1,6 +1,6 @@
 # Extending application components
 
-Azd provisions the infrastructure and deploys the components. To meet specific needs, you can customize the code, such as updating the [bot description](https://github.com/Azure/gpt-rag-orchestrator/blob/main/orc/bot_description.prompt) in the orchestrator to better define the bot's scope.
+Azd provisions the infrastructure and deploys the components. To meet specific needs, you can customize the code, such as updating the [bot description](https://github.com/swo-cesar-lopez/swo-gpt-rag-orchestrator/blob/main/orc/bot_description.prompt) in the orchestrator to better define the bot's scope.
 
 This accelerator repositories are public, here are some options for extending its code in your projects: 
 
@@ -25,19 +25,19 @@ That said, if you want to manually deploy and customize the components, you can 
 
 ## **1) Data Ingestion Application**
 
-Fork, copy or download the original [Data ingestion](https://github.com/Azure/gpt-rag-ingestion) repo to create your own data ingestion code then follow the steps in its **What if I want to redeploy just the ingestion component?** section to learn how to redeploy the component.
+Fork, copy or download the original [Data ingestion](https://github.com/swo-cesar-lopez/swo-gpt-rag-ingestion) repo to create your own data ingestion code then follow the steps in its **What if I want to redeploy just the ingestion component?** section to learn how to redeploy the component.
 
 If you want to run the component locally, which is interesting for testing your modifications before deploying, check out the **Running Locally with VS Code** section in the component's repository.
 
 ## **2) Orchestrator Application**
 
-Fork, copy or download the original [Orchestrator](https://github.com/Azure/gpt-rag-orchestrator) repo to create your own orchestrator git repo and follow the steps in its **Cloud Deployment** section to learn how to redeploy the component.
+Fork, copy or download the original [Orchestrator](https://github.com/swo-cesar-lopez/swo-gpt-rag-orchestrator) repo to create your own orchestrator git repo and follow the steps in its **Cloud Deployment** section to learn how to redeploy the component.
 
 If you want to run the component locally, which is interesting for testing your modifications before deploying, check out the **Running Locally with VS Code** section in the component's repository.
 
 ## **3) Front-end Application**
 
-Fork, copy or download the original [App Front-end](https://github.com/Azure/gpt-rag-frontend) repo to create your own frontend code and follow the steps in its **Deploy (quickstart)** section to learn how to redeploy the component.
+Fork, copy or download the original [App Front-end](https://github.com/swo-cesar-lopez/swo-gpt-rag-frontend) repo to create your own frontend code and follow the steps in its **Deploy (quickstart)** section to learn how to redeploy the component.
 
 If you want to run the component locally, which is interesting for testing your modifications before deploying, check out the **Test locally** section in the component's repository.
 

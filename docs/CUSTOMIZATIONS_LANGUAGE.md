@@ -20,7 +20,7 @@ azd env set SEARCH_ANALYZER_NAME vi.microsoft
 
 The orchestrator's prompts are crafted in English and include instructions that guide the model to generate content in the same language as the user, ensuring multilingual functionality. Therefore, there's no need for customization in this aspect.
 
-However, for certain error scenarios, such as server errors or when the Azure OpenAI service is unavailable, we utilize predefined error messages. These messages are available in English, Portuguese, and Spanish, and can be found in [this folder](https://github.com/Azure/gpt-rag-orchestrator/tree/main/orc/messages) within the orchestrator's repository.
+However, for certain error scenarios, such as server errors or when the Azure OpenAI service is unavailable, we utilize predefined error messages. These messages are available in English, Portuguese, and Spanish, and can be found in [this folder](https://github.com/swo-cesar-lopez/swo-gpt-rag-orchestrator/tree/main/orc/messages) within the orchestrator's repository.
 
 By default, the language for error messages is set to English (en). You can switch to another available language by setting the `ORCHESTRATOR_MESSAGES_LANGUAGE` environment variable before executing `azd provision` or `azd up`. For example, to select Spanish, use the following command:
 
@@ -28,7 +28,7 @@ By default, the language for error messages is set to English (en). You can swit
 azd env set ORCHESTRATOR_MESSAGES_LANGUAGE es
 ```
 
-If you wish to use your own error messages or add messages in a new language, you can modify the orchestrator's code. This involves either altering the content of the current JSON files or, to introduce a new language, adding a file akin to the existing `en.json`. For example, to add French, simply create a `fr.json` file in the same [folder](https://github.com/Azure/gpt-rag-orchestrator/tree/main/orc/messages) within the orchestrator's repository. 
+If you wish to use your own error messages or add messages in a new language, you can modify the orchestrator's code. This involves either altering the content of the current JSON files or, to introduce a new language, adding a file akin to the existing `en.json`. For example, to add French, simply create a `fr.json` file in the same [folder](https://github.com/swo-cesar-lopez/swo-gpt-rag-orchestrator/tree/main/orc/messages) within the orchestrator's repository. 
 
 ## Front-end
 

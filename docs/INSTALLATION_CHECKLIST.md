@@ -156,8 +156,8 @@ After completing the installation, verify that all components are correctly depl
 - [Customizing Resource Names](CUSTOMIZATIONS_RESOURCE_NAMES.md)
 - [Bring Your Own Resources](CUSTOMIZATIONS_BYOR.md)
 - [Orchestrator Repository](https://github.com/azure/gpt-rag-agentic)
-- [Front-end Repository](https://github.com/azure/gpt-rag-frontend)
-- [Data Ingestion Repository](https://github.com/Azure/gpt-rag-ingestion)
+- [Front-end Repository](https://github.com/swo-cesar-lopez/swo-gpt-rag-frontend)
+- [Data Ingestion Repository](https://github.com/swo-cesar-lopez/swo-gpt-rag-ingestion)
 
 ---
 

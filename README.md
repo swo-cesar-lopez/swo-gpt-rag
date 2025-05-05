@@ -98,18 +98,29 @@ Before beginning the installation, ensure you have the following:
 
 ## Environment Preparation
 
-1. **Download the Repository:**
+1. **Open cloud shell on Azure:**
 
     ```bash
-
+    gh auth login
     ```
 
-1. **Clone the Repository**
+2. **Create a folder:**
+
+    ```bash
+    mkdir gpt
+    cd gpt
+    ```
+
+3. **Login in GitHub:**
+
+    ```bash
+    gh auth login
+    ```
+
+4. **Clone the Repository**
    
    ```bash
-   # Clone the repository containing the accelerator code
-   git clone https://github.com/softwareone/genai-doc-search-accelerator.git
-   cd genai-doc-search-accelerator
+   gh repo clone swo-cesar-lopez/swo-gpt-rag
    ```
 
 2. **Set Up the Python Environment**

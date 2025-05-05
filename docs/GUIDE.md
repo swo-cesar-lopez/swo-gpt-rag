@@ -50,7 +50,7 @@ The **GPT-RAG Solution Accelerator** enables organizations to enhance customer s
 
 Beyond classical **Retrieval-Augmented Generation (RAG)** capabilities, the accelerator incorporates **agents** that support sophisticated scenarios such as **NL2SQL query generation** and other context-aware data interactions. This flexibility enables advanced use cases where AI can seamlessly retrieve and interpret information, meeting diverse technical requirements.
 
-The GPT-RAG Solution Accelerator follows a **modular approach**, consisting of three components: **[Data Ingestion](https://github.com/Azure/gpt-rag-ingestion)**, **[Orchestrator](https://github.com/Azure/gpt-rag-agentic)**, and **[App Front-End](https://github.com/Azure/gpt-rag-frontend)**, which utilizes the [Backend for Front-End](https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends) pattern to provide a scalable and efficient web interface.
+The GPT-RAG Solution Accelerator follows a **modular approach**, consisting of three components: **[Data Ingestion](https://github.com/swo-cesar-lopez/swo-gpt-rag-ingestion)**, **[Orchestrator](https://github.com/Azure/gpt-rag-agentic)**, and **[App Front-End](https://github.com/swo-cesar-lopez/swo-gpt-rag-frontend)**, which utilizes the [Backend for Front-End](https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends) pattern to provide a scalable and efficient web interface.
 
 ![Zero Trust Architecture](../media/admin-guide-homepage.png)
 <br>*GPT-RAG UI*
@@ -108,7 +108,7 @@ Data ingestion is a crucial part of the solution, enabling the system to retriev
 > [!NOTE]  
 > The ingestion process uses a pull approach: an Azure AI Search indexer checks blob storage hourly, triggering a Function App to preprocess and chunk new documents for indexing. Execution frequency is configurable.
 
-For more information about the data ingestion process take a look at the [GPT-RAG ingestion](https://github.com/Azure/gpt-rag-ingestion) function app repo.
+For more information about the data ingestion process take a look at the [GPT-RAG ingestion](https://github.com/swo-cesar-lopez/swo-gpt-rag-ingestion) function app repo.
 
 ## Orchestration Flow
 
@@ -660,7 +660,7 @@ azd deploy
 > If you want to upload documents for ingestion into the GPT-RAG storage account, you must have the **Storage Blob Data Contributor** role assigned in Azure Entra ID.
 
 > [!Note]  
-> After the initial deployment, you may choose to customize or update specific features, such as adjusting prompts, adding a logo to the frontend, testing different chunking strategies, or configuring a custom orchestration strategy like NL2SQL. For detailed guidance on these optional customizations, refer to the deployment section in each component's repository. [Orchestrator](https://github.com/azure/gpt-rag-agentic), [Front-end](https://github.com/azure/gpt-rag-frontend), [Data Ingestion](https://github.com/Azure/gpt-rag-ingestion).
+> After the initial deployment, you may choose to customize or update specific features, such as adjusting prompts, adding a logo to the frontend, testing different chunking strategies, or configuring a custom orchestration strategy like NL2SQL. For detailed guidance on these optional customizations, refer to the deployment section in each component's repository. [Orchestrator](https://github.com/azure/gpt-rag-agentic), [Front-end](https://github.com/swo-cesar-lopez/swo-gpt-rag-frontend), [Data Ingestion](https://github.com/swo-cesar-lopez/swo-gpt-rag-ingestion).
 
 ## Network Configuration Scenarios
 
@@ -889,7 +889,7 @@ With the **Private Endpoint** already set up for **App Service**, you can still 
 
 ## Configuring Entra Authentication
 
-This section outlines the steps to configure a custom MSAL-based authentication flow based on Azure Entra authentication for your [front-end App Service](https://github.com/azure/gpt-rag-frontend), this can also be used to configure the authentication to you [Avatar service](https://github.com/azure/gpt-rag-avatar).
+This section outlines the steps to configure a custom MSAL-based authentication flow based on Azure Entra authentication for your [front-end App Service](https://github.com/swo-cesar-lopez/swo-gpt-rag-frontend), this can also be used to configure the authentication to you [Avatar service](https://github.com/azure/gpt-rag-avatar).
 
 ### Prerequisites
 1. The Front-end or Avatar app deployed in Azure App Service. 
@@ -1045,14 +1045,14 @@ To learn how this scenario works and configure it, check the [NL2SQL and Fabric 
 
 ## Enabling Multimodality
 
-To enable GPT-RAG to use multimodal capabilities, such as those provided by GPT-4o, set the `MULTIMODAL` environment variable to `true` in the data ingestion and set the `multimodal_rag` agent strategy in agentic orchestration Function Apps. For more details on how multimodality works and image data is ingested, refer to [Multimodal RAG Overview](MULTIMODAL_RAG.md) and the documentation in the data ingestion repository: [Multimodal Ingestion](https://github.com/Azure/gpt-rag-ingestion?tab=readme-ov-file#multimodal-ingestion) respectively.
+To enable GPT-RAG to use multimodal capabilities, such as those provided by GPT-4o, set the `MULTIMODAL` environment variable to `true` in the data ingestion and set the `multimodal_rag` agent strategy in agentic orchestration Function Apps. For more details on how multimodality works and image data is ingested, refer to [Multimodal RAG Overview](MULTIMODAL_RAG.md) and the documentation in the data ingestion repository: [Multimodal Ingestion](https://github.com/swo-cesar-lopez/swo-gpt-rag-ingestion?tab=readme-ov-file#multimodal-ingestion) respectively.
 
 > [!NOTE]
 > Currently, only the Agentic Orchestrator supports this feature.
 
 ## SharePoint Setup
 
-The SharePoint connector indexes and purges files using scheduled Azure Functions to maintain an up-to-date Azure AI Search Index. For more information on how this works, see the Sharepoint section on the [Data Ingestion Page](https://github.com/Azure/gpt-rag-ingestion?tab=readme-ov-file#sharepoint-indexing). For detailed instructions on setting up SharePoint for data ingestion, please refer to the [SharePoint Setup Guide](INGESTION_SHAREPOINT_SETUP.md).
+The SharePoint connector indexes and purges files using scheduled Azure Functions to maintain an up-to-date Azure AI Search Index. For more information on how this works, see the Sharepoint section on the [Data Ingestion Page](https://github.com/swo-cesar-lopez/swo-gpt-rag-ingestion?tab=readme-ov-file#sharepoint-indexing). For detailed instructions on setting up SharePoint for data ingestion, please refer to the [SharePoint Setup Guide](INGESTION_SHAREPOINT_SETUP.md).
 
 ## Speech Avatar Integration
 

@@ -13,7 +13,7 @@ This document outlines the steps to set up a multi-environment workflow to deplo
 - This example uses [`azd pipeline config`](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/configure-devops-pipeline?tabs=azdo) to rapidly set up GitHub workflows and federated identity configuration for enhanced security.
 - All below commands are run as a one-time setup on a local machine by an admin who has access to the GitHub Repository and Azure tenant.
 - This example does not cover configuring any naming conventions.
-- The original remote versions of the [orchestrator](https://github.com/Azure/gpt-rag-orchestrator), [frontend](https://github.com/Azure/gpt-rag-frontend), and [ingestion](https://github.com/Azure/gpt-rag-ingestion) repositories are used; in a real scenario, you would fork these repositories and use your forked versions. This would require updating the repository URLs in the `scripts/fetchComponents.*` files.
+- The original remote versions of the [orchestrator](https://github.com/swo-cesar-lopez/swo-gpt-rag-orchestrator), [frontend](https://github.com/swo-cesar-lopez/swo-gpt-rag-frontend), and [ingestion](https://github.com/swo-cesar-lopez/swo-gpt-rag-ingestion) repositories are used; in a real scenario, you would fork these repositories and use your forked versions. This would require updating the repository URLs in the `scripts/fetchComponents.*` files.
 - This example uses federated identity for authentication. If you prefer to use client secret authentication, you will need to modify the workflow files accordingly.
 - Bicep is the IaC language used in this example.
 

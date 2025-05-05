@@ -406,7 +406,7 @@ Gather Necessary Information:
     - First clone the repositories for each application.
     - For the Orchestrator Function App and Data Ingestion Function App:
       - In VSCode with the [Azure Function App Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions), go to the *Azure* panel, locate your Function App in the resource explorer, right-click on it, and select *Deploy*.
-    - For the App Service Frontend deployment refer to the deployment section in the [frontend repo](https://github.com/Azure/gpt-rag-frontend#deploy-quickstart).
+    - For the App Service Frontend deployment refer to the deployment section in the [frontend repo](https://github.com/swo-cesar-lopez/swo-gpt-rag-frontend#deploy-quickstart).
 
 14. **External Access**
     - To allow internet access to your app, permit access only from [Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/create-front-door-portal) to your App Service.
