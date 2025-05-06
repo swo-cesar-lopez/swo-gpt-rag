@@ -102,7 +102,7 @@ az provider register --namespace Microsoft.Storage
    Clone the repository containing the solution code
 
    ```sh
-   https://github.com/swo-cesar-lopez/swo-gpt-rag.git
+   git clone https://github.com/swo-cesar-lopez/swo-gpt-rag.git
    ```
 
 3. **Move to the resources folder**
