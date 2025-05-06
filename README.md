@@ -1,7 +1,7 @@
 # Installation Manual: Document Search with GenAI - PoC
 ## For Oxfam America
 
-*Prepared by: César López - SRE*  
+*Prepared by: César López - Sr. Expert Technology Implementation & Consulting*  
 *Date: May 5, 2025*
 
 ## Table of Contents
