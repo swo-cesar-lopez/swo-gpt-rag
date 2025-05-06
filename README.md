@@ -113,6 +113,14 @@ az provider register --namespace Microsoft.Storage
    gh repo clone swo-cesar-lopez/swo-gpt-rag
    ```
 
+4. **Move to the resources folder**
+
+   Move to the resources folder
+
+   ```sh
+   cd swo-gpt-rag
+   ```
+
 4. **Initialize the project**
    
    Initialize the project with Azure Developer CLI. 
