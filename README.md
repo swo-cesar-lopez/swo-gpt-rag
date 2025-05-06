@@ -121,7 +121,7 @@ az provider register --namespace Microsoft.Storage
    cd swo-gpt-rag
    ```
 
-4. **Initialize the project**
+5. **Initialize the project**
    
    Initialize the project with Azure Developer CLI. 
 
@@ -139,7 +139,15 @@ az provider register --namespace Microsoft.Storage
    azd env set AZURE_LOCATION eastus2
    ```
 
-5. **Sign in to Azure 
+6. **Environment name**
+
+   Please specify the name of the new environment for your project (e.g., gptrag).
+
+   ```sh
+   Enter a new environment name: 
+   ```
+
+7. **Sign in to Azure 
 
    Execute both of these authentication commands: 
 
