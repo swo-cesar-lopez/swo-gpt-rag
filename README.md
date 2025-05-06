@@ -97,23 +97,15 @@ az provider register --namespace Microsoft.Storage
    cd gpt
    ```
 
-2. **Sign in to GitHub**
-   
-   Authenticate our session with GitHub
-
-   ```sh
-   gh auth login
-   ```
-
-3. **Clone the repository**
+2. **Clone the repository**
    
    Clone the repository containing the solution code
 
    ```sh
-   gh repo clone swo-cesar-lopez/swo-gpt-rag
+   https://github.com/swo-cesar-lopez/swo-gpt-rag.git
    ```
 
-4. **Move to the resources folder**
+3. **Move to the resources folder**
 
    Move to the resources folder
 
@@ -121,7 +113,28 @@ az provider register --namespace Microsoft.Storage
    cd swo-gpt-rag
    ```
 
-5. **Initialize the project**
+4. **List available subscriptions**
+
+   Use this to list all subscriptions linked to your Azure account.
+
+   ```sh
+   az account list --output table 
+   ```
+
+5. **Set the active subscription**
+
+   To switch to a different subscription (this affects both az and azd):
+   ```sh
+   az account set --subscription "<Subscription-ID-or-Name>"
+   ```
+
+6. **Show current active subscription**
+
+   To confirm which subscription is currently active:
+   ```sh
+   az account show --output table
+   ```
+7. **Initialize the project**
    
    Initialize the project with Azure Developer CLI. 
 
@@ -147,7 +160,7 @@ az provider register --namespace Microsoft.Storage
    Enter a new environment name: 
    ```
 
-7. **Sign in to Azure 
+7. **Sign in to Azure** 
 
    Execute both of these authentication commands: 
 
@@ -160,9 +173,10 @@ az provider register --namespace Microsoft.Storage
    With standard Azure CLI
    ```sh
    az login
+   az login --tenant "TenantId"
    ```
 
-6. **Start building the infrastructure**
+8. **Start building the infrastructure**
 
    Starts the deployment of all components
    ```sh
